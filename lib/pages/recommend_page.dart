@@ -3,11 +3,14 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:movie_recommandation/models/movie.dart';
 import 'package:movie_recommandation/network/movie.dart';
+import 'package:movie_recommandation/pages/movie_detail_page.dart';
 
 import '../constants.dart';
 
 class RecommendPage extends StatefulWidget {
-  final List<int> movieIdList = [1, 2];
+  final List<int> movieIdList;
+
+  RecommendPage(this.movieIdList);
 
   @override
   State<RecommendPage> createState() => _RecommendPageState();
@@ -140,7 +143,13 @@ class _RecommendPageState extends State<RecommendPage> {
                         itemBuilder: (ctx, idx) => Padding(
                           padding: EdgeInsets.symmetric(vertical: 10),
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          MovieDetailPage(movieList[idx])));
+                            },
                             child: ListTile(
                               key: ValueKey(movieList[idx].id),
                               leading: Image.network(movieList[idx].imgUrl!),

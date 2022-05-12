@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:movie_recommandation/pages/recommend_page.dart';
 import 'package:movie_recommandation/widgets/search_field_widget.dart';
 import 'package:movie_recommandation/models/movie.dart';
 import '../constants.dart';
@@ -157,7 +158,13 @@ class _HomePageState extends State<HomePage> {
                       Padding(
                         padding: EdgeInsets.only(right: 20.0),
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) =>
+                                        RecommendPage(favouriteMovieList)));
+                          },
                           child: Text(
                             'Recommend Movies',
                             style: TextStyle(color: Constants.kGreyColor),
