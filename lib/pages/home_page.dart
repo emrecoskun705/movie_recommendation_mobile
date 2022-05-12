@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                                     subtitle: Padding(
                                       padding: EdgeInsets.only(top: 4),
                                       child: Text(
-                                        movieList[idx].overview!,
+                                        movieList[idx].genre!,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
                                         style: TextStyle(
