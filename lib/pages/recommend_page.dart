@@ -140,9 +140,7 @@ class _RecommendPageState extends State<RecommendPage> {
                         itemBuilder: (ctx, idx) => Padding(
                           padding: EdgeInsets.symmetric(vertical: 10),
                           child: GestureDetector(
-                            onTap: () {
-
-                            },
+                            onTap: () {},
                             child: ListTile(
                               key: ValueKey(movieList[idx].id),
                               leading: Image.network(movieList[idx].imgUrl!),
