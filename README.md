@@ -1,16 +1,19 @@
-# movie_recommandation
 
-A new Flutter project.
+# Movie Recommendation
 
-## Getting Started
+In this project I used Flutter to create mobile application for my movie recommendation app.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+![MovieAppHomeScreen](https://user-images.githubusercontent.com/57330864/173201814-fe1a4d55-5b6d-4baf-980c-05466c4904ed.jpeg)
+[RecommendScreen](https://user-images.githubusercontent.com/57330864/173201827-83c1133a-2dc4-4782-88a3-02ebe396b97f.jpeg)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  
+## Related Projects!
+
+
+[Movie Recommendation Backend](https://github.com/emrecoskun705/movie_recommendation)
+
+
+  
